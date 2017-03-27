@@ -1,0 +1,47 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.nventorylistcontroller {
+  left: 100px;
+}
+
+.divinsertinventoryitem {
+  position: relative;
+  left: 30px;
+  border: 1px solid #73AD21;
+  width: 450px;
+  height: 282px;
+}
+
+.error {
+  font: italic bold 17px/30px Georgia, serif;
+  color: red;
+}
+h1 {
+  align: center;
+  text-decoration: underline;
+
+}

@@ -1,0 +1,19 @@
+<div>
+    <h1>Delete an Item</h1>
+    <br/>
+    <form ng-submit="deleteInventorySubmit()" name="deleteInventoryItemForm">
+        <label>inventory No: </label>
+        <input type="text" id="deleteItem.inventoryNo"
+               name="deleteItem.inventoryNo"
+               value="the inventory-item no you like to delete"
+               ng-model="deleteItem.inventoryNo" required>
+        <br/>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Form</button>
+        <div role="alert">
+            <span class="error" ng-show="deleteInventoryItemForm.$error.required">
+                The inventory Number is required!
+            </span>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,10 @@
+<div align="center">
+    <table>
+        <tr>
+            <th ng-repeat="(key, value) in inventoryItems[0]">{{key}}</th>
+        </tr>
+        <tr ng-repeat="inventoryItem in inventoryItems">
+            <td ng-repeat="(key, value) in inventoryItem">{{value}} &nbsp;</td>
+        </tr>
+    </table>
+</div>
