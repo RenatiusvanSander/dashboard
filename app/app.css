@@ -24,24 +24,99 @@
   padding-right: 0.3em;
 }
 
-.nventorylistcontroller {
-  left: 100px;
-}
-
-.divinsertinventoryitem {
-  position: relative;
-  left: 30px;
-  border: 1px solid #73AD21;
-  width: 450px;
-  height: 282px;
-}
-
 .error {
   font: italic bold 17px/30px Georgia, serif;
   color: red;
 }
-h1 {
-  align: center;
-  text-decoration: underline;
 
+/*
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}*/
+
+/* InventoryList and Search Filter styles */
+
+.headingDashboard {
+  text-align: center;
+}
+
+.divSurroundSearchFilter {
+  position: relative;
+  right: 490px;
+}
+
+.divSearchFilter {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.searchFilterInput {
+  height: 30px;
+  width: 175px;
+  font-size: inherit;
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-variant: normal;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* table layout */
+th {
+  background-color: #e20074;
+  color: white;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+td {
+  text-align: center;
+  font-size: 12pt;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.tableInventoryList {
+  position: relative;
+  left: 3px;
+  background-color: rgb(248, 244, 255);
+  width: 99%;
+  border-radius: 5px;
+}
+
+/* Insert Inventory Styles */
+.divInsertInventoryItem {
+  position: relative;
+  left: 30px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  width: 900px;
+  height: 350px;
+  background-color: rgba(150, 246, 150, 0.49);
+}
+
+.divInsertInventoryItemForm {
+  text-align: left;
+  position: relative;
+  left: 300px;
+  font-size: 12pt;
+}
+
+.headingDeleteInventoryItem {
+  text-align: center;
+}
+
+.divDeleteInventoryItemContainer {
+  position: relative;
+  left: 30px;
+  border: 2px solid red;
+  font-size: 12pt;
+  border-radius: 6px;
+  background-color: rgba(255, 37, 77, 0.05);
+  width: 71%;
 }

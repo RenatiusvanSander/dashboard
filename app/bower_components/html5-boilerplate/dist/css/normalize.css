@@ -17,7 +17,7 @@ html {
  */
 
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 /* HTML5 display definitions
@@ -136,6 +136,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-decoration: underline;
 }
 
 /**
@@ -415,7 +416,7 @@ optgroup {
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: 1px;
 }
 
 td,

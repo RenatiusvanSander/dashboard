@@ -1,13 +1,13 @@
-<div>
-    <h1>Delete an Item</h1>
+<div class="divDeleteInventoryItemContainer">
+    <h1 class="headingDeleteInventoryItem">Delete an Item</h1>
     <br/>
-    <form ng-submit="deleteInventorySubmit()" name="deleteInventoryItemForm">
+    <form ng-submit="deleteInventorySubmit()" name="deleteInventoryItemForm" class="divInsertInventoryItemForm">
         <label>inventory No: </label>
         <input type="text" id="deleteItem.inventoryNo"
                name="deleteItem.inventoryNo"
                value="the inventory-item no you like to delete"
                ng-model="deleteItem.inventoryNo" required>
-        <br/>
+        <br /><br />
         <button type="submit">Submit</button>
         <button type="reset">Reset Form</button>
         <div role="alert">

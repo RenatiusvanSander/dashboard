@@ -1,12 +1,12 @@
 <div align="center">
     <!-- Filter inventoryItems -->
-    <div>
-        <div>
-            Search: <input ng-model="inventoryItems.query" />
+    <div class="divSurroundSearchFilter">
+        <div class="divSearchFilter">
+            Searchfilter: <input class="searchFilterInput" ng-model="inventoryItems.query" />
         </div>
     </div>
     <!-- Filter inventoryItems end -->
-    <table>
+    <table class="tableInventoryList">
         <tr>
             <th ng-repeat="(key, value) in inventoryItems[0]">{{key}}</th>
         </tr>

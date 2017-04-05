@@ -1,29 +1,27 @@
-<div class="divinsertinventoryitem">
-    <h1>Insert an Item to Inventory</h1><br>
-    <form name="insertForm" ng-submit="Submit()">
-        <label>Item: </label><input ng-model="item.name" type="text" name="itemName"
-                                    id="itemName" value="item name to place here"></input><br/>
-        <label>Inventory Number: </label><input ng-model="item.inventoryNo" type="text"
-                                                name="inventoryNo" id="inventoryNo"
-                                                value="Inventory Number here"></input><br/>
-        <label>Barcode: </label><input ng-model="item.barcode" type="text" id="barcode" name="barcode"
-                                       value="barcode to insert here"></input><br/>
-        <label>fixed Location: </label><input ng-model="item.fixLocation" type="text" id="fixLocation"
-                                              name="fixLocation" value="fixed location of item"></input><br/>
-        <label>Borrower: </label><input ng-model="item.borrower" type="text" id="borrower"
-                                        name="borrower" value="Borrower\s name"></input><br/>
-        <label>Comment: </label><input ng-model="item.comment" type="text" id="comment"
-                                       name="comment" value="May have a comment!"></input>
-
-        <div role="alert">
+<div class="divInsertInventoryItem">
+    <div class="divInsertInventoryItemForm">
+        <h1>Insert an Item to Inventory</h1><br>
+        <form name="insertForm" ng-submit="Submit()">
+            <label>Item: </label><input ng-model="item.name" type="text" name="itemName"
+                                        id="itemName" value="item name to place here"></input><br/>
+            <label>Inventory Number: </label><input ng-model="item.inventoryNo" type="text"
+                                                    name="inventoryNo" id="inventoryNo"
+                                                    value="Inventory Number here"></input><br/>
+            <label>Barcode: </label><input ng-model="item.barcode" type="text" id="barcode" name="barcode"
+                                           value="barcode to insert here"></input><br/>
+            <label>fixed Location: </label><input ng-model="item.fixLocation" type="text" id="fixLocation"
+                                                  name="fixLocation" value="fixed location of item"></input><br/>
+            <label>Borrower: </label><input ng-model="item.borrower" type="text" id="borrower"
+                                            name="borrower" value="Borrower\s name"></input><br/>
+            <label>Comment: </label><input ng-model="item.comment" type="text" id="comment"
+                                           name="comment" value="May have a comment!"></input>
+            <div role="alert">
         <span class="error" ng-show="insertForm.input.$error.required" class="ng-hide">
                   Required!
                 </span>
-
-        </div>
-
-        <button type="submit">Insert</button>
-        <button type="reset">Reset</button>
-
-    </form>
+            </div>
+            <button type="submit">Insert</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
 </div>
