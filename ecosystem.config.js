@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name: 'DASHBOARD',
-      script: '/app/app.js',
+      script: 'app.js',
       env: {
         COMMON_VARIABLE: 'true'
       },
