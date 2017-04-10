@@ -19,7 +19,7 @@ angular
                 if (deleteConfirmed) {
 
                     // delete URL
-                    deleteURL = 'http://localhost:3000/api/inventory-items/' + $scope.deleteItem.inventoryNo;
+                    deleteURL = 'http://100.127.254.3:3000/api/inventory-items/' + $scope.deleteItem.inventoryNo;
 
                     // send delete request to api
                     $http.delete(deleteURL)

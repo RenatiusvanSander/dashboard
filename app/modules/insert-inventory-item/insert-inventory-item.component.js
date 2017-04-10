@@ -4,7 +4,6 @@
 angular
     .module('insertInventoryItem')
     .component('insertInventoryItem', {
-
         templateUrl: 'modules/insert-inventory-item/insert-inventory-item.template.html',
 
         // controller InsertInventoryItemController
@@ -23,7 +22,7 @@ angular
                     comment: $scope.item.comment
                 };
 
-                postUrl = 'http://localhost:3000/api/inventory-items/';
+                postUrl = 'http://100.127.254.3:3000/api/inventory-items/';
 
                 // now post data to api
                 $http.post(postUrl, postData, [])
@@ -39,6 +38,5 @@ angular
                         alert(error.data + ' means there is a validation error.');
                     });
             }
-
         }
     });

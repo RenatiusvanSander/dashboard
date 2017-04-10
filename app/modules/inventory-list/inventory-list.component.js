@@ -9,7 +9,7 @@ angular
         controller: function InventoryListController($scope, $http) {
 
             //get data
-            $http.get('http://localhost:3000/api/inventory-items', {})
+            $http.get('http://100.127.254.3:3000/api/inventory-items', {})
                 .then(function (response) {
                     $scope.inventoryItems = response.data;
                 });
