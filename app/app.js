@@ -1,4 +1,15 @@
 'use strict';
+/**
+ * A utility to manage the inventory-item-database
+ * It views all entries. It is able to delete an inventory-item.
+ * It creates an inventory-item by your definition.
+ *
+ * @class dashboard
+ * @constructor
+ * @Param dashboardApp
+ * @Param ngRoute
+ * @required
+ */
 // Declare app level module which depends on views, and components
   var dashboardApp = angular.module('dashboardApp', ['ngRoute']);
 //configure hyperlinks behaviour

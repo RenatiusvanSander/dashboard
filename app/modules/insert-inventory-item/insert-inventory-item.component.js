@@ -1,15 +1,47 @@
 /**
  * Created by remy on 23/02/17.
  */
+/**
+ * @module insertInventoryItem
+ * @submodule insertInventoryItem-component
+ */
 angular
     .module('insertInventoryItem')
     .component('insertInventoryItem', {
+      /**
+       * Template for this view's container...
+       *
+       * @property insert-inventory-item.template.html
+       * @type String
+       * @default "<div>"
+       */
         templateUrl: 'modules/insert-inventory-item/insert-inventory-item.template.html',
 
+      /**
+       * A utility that brokers HTTP requests...
+       *
+       * @class InsertInventoryItemController
+       * @constructor
+       * @param {Object} $scope stores item-varies for inserting
+       * @param {Object} $http posts data to the inventory-api
+       * @required
+       *
+       */
         // controller InsertInventoryItemController
         controller: function InsertInventoryItemController($scope, $http) {
+        /**
+         * @param {String} item stores inserting data
+         * Attribute item
+         */
             $scope.item = {}; // first declare it
 
+        /**
+         * Returns a http-status code. It sends thed ata to the api to
+         * store it inside database of inventory items.
+         *
+         * @method scope.Submit
+         * @return {String} http-status code
+         */
             // post information to api to insert item
             $scope.Submit = function () {
                 var postData = {
